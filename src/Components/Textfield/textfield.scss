@@ -1,0 +1,69 @@
+.box-input {
+  margin-bottom: 24px;
+
+  input {
+    width: 100%;
+    height: 40px;
+    display: block;
+    border: none;
+    border-radius: 8px;
+    padding: 0 7px;
+
+    &:focus {
+      outline: 0;
+      box-shadow: none;
+    }
+  }
+
+  &.textfield-large {
+    input {
+      height: 48px;
+    }
+  }
+
+  &.textfield-small {
+    input {
+      height: 32px;
+    }
+  }
+
+  .groupe-input {
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+
+    .icon {
+      width: 30px;
+      height: 40px;
+      padding: 0 7px;
+      text-align: center;
+      font-size: 16px;
+      border-radius: 4px 0 0 4px;
+      margin-bottom: 0;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      &-right {
+        background-color: transparent;
+        font-size: 20px;
+        padding-right: 7px;
+        padding-left: 0;
+      }
+    }
+
+    &:focus-within {
+      border: 1px solid #2cecac;
+    }
+  }
+  > label {
+    &:first-child {
+      display: inline-block;
+      margin-bottom: 8px;
+    }
+  }
+  input[type="textarea"] {
+    height: 120px;
+  }
+}

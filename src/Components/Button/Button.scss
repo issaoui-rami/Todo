@@ -1,0 +1,68 @@
+button {
+  border: none;
+  padding: 8px 15px;
+  outline: none;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: .3s;
+  margin-bottom: 12px;
+}
+button:disabled,
+button[disabled] {
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+}
+.large-btn button {
+  padding: 16px 30px;
+  font-size: 16px;
+  width: 100%;
+}
+.small-btn button {
+  padding: 4px 7px;
+  font-size: 12px;
+}
+.yellow-btn button {
+  background-color: rgb(180, 160, 5);
+  color: #fff;
+}
+.orange-btn button {
+  background-color: rgb(250, 111, 12);
+  color: #fff;
+}
+.green-btn button{
+  background-color: #466443;
+  border: 1px solid #466443;
+  color: #fff;
+  &:hover, &:focus{
+    background-color: #b0d4ff;
+    border: 1px solid #b0d4ff;
+    color: #466443;
+  }
+}
+.red-btn button{
+  background-color: #ec0909;
+  border: 1px solid #ec0909;
+  color: #fff;
+  &:hover, &:focus{
+    background-color: #b0d4ff;
+    border: 1px solid #b0d4ff;
+    color: #466443;
+  }
+}
+.gray-btn button{
+  background-color: #f9fcf8;
+  border: 1px solid #f9fcf8;
+  color: #466443;
+  
+}
+.brd-4 button {
+  border-radius: 4px;
+}
+.brd-8 button {
+  border-radius: 8px;
+}
+.brd-50 button {
+  border-radius: 50px;
+}
